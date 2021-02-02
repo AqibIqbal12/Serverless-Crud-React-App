@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
 
   try {
     const employeeID = event.queryStringParameters.ID
-    var adminClient = new faunadb.Client({ secret: process.env.faunadbKey });
+    var adminClient = new faunadb.Client({ secret: "fnAD959afCACAz9x0wPyHF2gPFaAVYLEzTtTh7Hi" });
 
     const result = await adminClient.query(
         q.Get(q.Ref(q.Collection('employees'), employeeID))

@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     try {
         const employeeID = event.queryStringParameters.ID
         const updatedEmpDtls = JSON.parse(event.body);
-        var adminClient = new faunadb.Client({ secret: process.env.faunadbKey });
+        var adminClient = new faunadb.Client({ secret: "fnAD959afCACAz9x0wPyHF2gPFaAVYLEzTtTh7Hi" });
 
         const result = await adminClient.query(
             q.Update(

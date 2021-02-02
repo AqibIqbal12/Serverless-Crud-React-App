@@ -4,7 +4,7 @@ q = faunadb.query;
 exports.handler = async (event, context) => {
 
   try {
-    var adminClient = new faunadb.Client({ secret: process.env.faunadbKey });
+    var adminClient = new faunadb.Client({ secret: "fnAD959afCACAz9x0wPyHF2gPFaAVYLEzTtTh7Hi" });
     const {data} = await adminClient.query(
 
       q.Reverse(

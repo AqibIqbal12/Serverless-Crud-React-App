@@ -109,7 +109,7 @@ const App = () => {
                         return elem;
                       })
                     )
-                    showAlert("Data Updated Successfullyy!", "success");
+                    showAlert("Data Updated Successfully!", "success");
                   });
               }
 
